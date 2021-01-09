@@ -1,6 +1,8 @@
 package mu.edu.tr.tapputi;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,14 +18,12 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import mu.edu.tr.tapputi.dummy.DummyContent;
-
 /**
  * A fragment representing a list of Items.
  */
 public class parfumFragment extends Fragment {
     OnParfumSelected listener;
-    List<parfum> parfums = new ArrayList<>();
+    List<Parfum> parfums = new ArrayList<>();
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
@@ -54,8 +54,10 @@ public class parfumFragment extends Fragment {
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
+        Bitmap sephora = BitmapFactory.decodeResource(this.getResources(), R.drawable.sephora);
 
-
+        Parfum blackOpium = new Parfum("Yvis Laurent", "Black Opium", 1000,150,120, (short) 4, sephora);
+        parfums.add(blackOpium);
     }
 
     @Override
@@ -92,6 +94,6 @@ public class parfumFragment extends Fragment {
     }
 
     public interface OnParfumSelected{
-        void movieSelected(parfum parfume);
+        void movieSelected(Parfum parfume);
     }
 }

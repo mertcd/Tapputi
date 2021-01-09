@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 
 import java.util.List;
 
-public class parfum {
+public class Parfum {
     private String brand;
     private String name;
     private float priceTl;
@@ -13,7 +13,7 @@ public class parfum {
     private short rating;
     private List<String> comments;
     private Bitmap image;
-    public parfum(String brand, String name, float priceTl, float priceDolar, float priceEuro, short rating) {
+    public Parfum(String brand, String name, float priceTl, float priceDolar, float priceEuro, short rating, Bitmap image) {
         this.brand = brand;
         this.name = name;
         this.priceTl = priceTl;
@@ -21,6 +21,15 @@ public class parfum {
         this.priceEuro = priceEuro;
         this.rating = rating;
 
+        this.image = image;
+    }
+
+    public Bitmap getImage() {
+        return image;
+    }
+
+    public void setImage(Bitmap image) {
+        this.image = image;
     }
 
     public String getBrand() {

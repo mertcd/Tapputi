@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements parfumFragment.On
     }
 
     @Override
-    public void movieSelected(parfum parfume) {
+    public void movieSelected(Parfum parfume) {
 
     }
 }

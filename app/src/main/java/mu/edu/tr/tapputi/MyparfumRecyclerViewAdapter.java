@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import mu.edu.tr.tapputi.dummy.DummyContent.DummyItem;
@@ -18,11 +19,11 @@ import java.util.List;
  */
 public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRecyclerViewAdapter.ViewHolder> {
 
-    private final List<parfum> mValues;
+    private final List<Parfum> mValues;
     private parfumFragment.OnParfumSelected listener;
     int selectedIndex;
 
-    public MyparfumRecyclerViewAdapter(List<parfum> items,parfumFragment.OnParfumSelected listener) {
+    public MyparfumRecyclerViewAdapter(List<Parfum> items, parfumFragment.OnParfumSelected listener) {
         mValues = items;
         this.listener= listener;
     }
@@ -37,8 +38,9 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(position+"");
+        holder.mIdView.setText(mValues.get(position).getBrand());
         holder.mContentView.setText(mValues.get(position).getName());
+        holder.image.setImageBitmap(mValues.get(position).getImage());
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,14 +64,15 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
-        public parfum mItem;
+        public final ImageView image;
+        public Parfum mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.item_number);
+            mIdView = (TextView) view.findViewById(R.id.brand);
             mContentView = (TextView) view.findViewById(R.id.content);
-
+            image = (ImageView) view.findViewById(R.id.parfumImage);
         }
 
         @Override
