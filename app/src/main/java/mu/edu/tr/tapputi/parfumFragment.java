@@ -58,6 +58,8 @@ public class parfumFragment extends Fragment {
 
         Parfum blackOpium = new Parfum("Yvis Laurent", "Black Opium", 1000,150,120, (short) 4, sephora);
         parfums.add(blackOpium);
+        Bitmap calvin = BitmapFactory.decodeResource(this.getResources(), R.drawable.sephora);
+        Parfum calvinKlein = new Parfum("Calvin Klein", "Intense Europhia", 1000,150,120, (short) 4, sephora);
     }
 
     @Override
