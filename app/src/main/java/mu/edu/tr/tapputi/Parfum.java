@@ -13,6 +13,7 @@ public class Parfum {
     private short rating;
     private List<String> comments;
     private Bitmap image;
+
     public Parfum(String brand, String name, float priceTl, float priceDolar, float priceEuro, short rating, Bitmap image) {
         this.brand = brand;
         this.name = name;

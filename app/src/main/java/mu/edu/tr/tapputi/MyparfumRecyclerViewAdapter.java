@@ -64,6 +64,7 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
+        public final TextView priceTl;
         public final ImageView image;
         public Parfum mItem;
 
@@ -73,6 +74,7 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
             mIdView = (TextView) view.findViewById(R.id.brand);
             mContentView = (TextView) view.findViewById(R.id.content);
             image = (ImageView) view.findViewById(R.id.parfumImage);
+            priceTl =  (TextView) view.findViewById(R.id.priceTl);
         }
 
         @Override
