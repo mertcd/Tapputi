@@ -41,6 +41,9 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         holder.mIdView.setText(mValues.get(position).getBrand());
         holder.mContentView.setText(mValues.get(position).getName());
         holder.image.setImageBitmap(mValues.get(position).getImage());
+        holder.priceTl.setText( mValues.get(position).getPriceTl());
+        holder.priceDolar.setText( mValues.get(position).getPriceDolar());
+        holder.priceEuro.setText( mValues.get(position).getPriceEuro());
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +70,9 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         public final TextView priceTl;
         public final ImageView image;
         public Parfum mItem;
+        public final TextView priceEuro;
+        public final TextView priceDolar;
+
 
         public ViewHolder(View view) {
             super(view);
@@ -75,6 +81,8 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
             mContentView = (TextView) view.findViewById(R.id.content);
             image = (ImageView) view.findViewById(R.id.parfumImage);
             priceTl =  (TextView) view.findViewById(R.id.priceTl);
+            priceEuro = (TextView) view.findViewById(R.id.priceEuro);
+            priceDolar = (TextView) view.findViewById(R.id.priceDolar);
         }
 
         @Override

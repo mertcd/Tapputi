@@ -56,13 +56,13 @@ public class parfumFragment extends Fragment {
         }
         Bitmap sephora = BitmapFactory.decodeResource(this.getResources(), R.drawable.sephora);
 
-        Parfum blackOpium = new Parfum("Yvis Laurent", "Black Opium", 1000,150,120, (short) 4, sephora);
+        Parfum blackOpium = new Parfum("Yvis Laurent", "Black Opium", "1000₺","150$","120€", (short) 4, sephora);
         parfums.add(blackOpium);
         Bitmap calvin = BitmapFactory.decodeResource(this.getResources(), R.drawable.calvin);
-        Parfum calvinKlein = new Parfum("Calvin Klein", "Intense Europhia", 1000,150,120, (short) 4, calvin);
+        Parfum calvinKlein = new Parfum("Calvin Klein", "Intense Europhia", "1000₺","150$","120€", (short) 4, calvin);
         parfums.add(calvinKlein);
         Bitmap armaniImage = BitmapFactory.decodeResource(this.getResources(), R.drawable.giorgio);
-        Parfum aquaDıGıo = new Parfum("Giorgio Armani", "Aqua DI Gio", 1000,150,120, (short) 4, armaniImage);
+        Parfum aquaDıGıo = new Parfum("Giorgio Armani", "Aqua DI Gio", "1000₺","150$","120€", (short) 4, armaniImage);
         parfums.add(blackOpium);
         parfums.add(calvinKlein);
     }

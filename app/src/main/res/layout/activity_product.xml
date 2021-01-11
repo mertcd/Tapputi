@@ -69,12 +69,13 @@
 
     <LinearLayout
         android:id="@+id/Prices"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="63dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/parfumNames"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+        app:layout_constraintTop_toBottomOf="@+id/parfumNames">
 
         <TextView
             android:id="@+id/textView"
@@ -82,7 +83,7 @@
             android:layout_height="wrap_content"
             android:text="₺131"
             android:textColor="#09165E"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -90,7 +91,15 @@
             android:layout_height="wrap_content"
             android:shadowColor="#157E69"
             android:text="€14"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/Prices"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

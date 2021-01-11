@@ -7,14 +7,14 @@ import java.util.List;
 public class Parfum {
     private String brand;
     private String name;
-    private float priceTl;
-    private float priceDolar;
-    private float priceEuro;
+    private String priceTl;
+    private String priceDolar;
+    private String priceEuro;
     private short rating;
     private List<String> comments;
     private Bitmap image;
 
-    public Parfum(String brand, String name, float priceTl, float priceDolar, float priceEuro, short rating, Bitmap image) {
+    public Parfum(String brand, String name, String priceTl, String priceDolar, String priceEuro, short rating, Bitmap image) {
         this.brand = brand;
         this.name = name;
         this.priceTl = priceTl;
@@ -49,27 +49,27 @@ public class Parfum {
         this.name = name;
     }
 
-    public float getPriceTl() {
+    public String getPriceTl() {
         return priceTl;
     }
 
-    public void setPriceTl(float priceTl) {
+    public void setPriceTl(String priceTl) {
         this.priceTl = priceTl;
     }
 
-    public float getPriceDolar() {
+    public String getPriceDolar() {
         return priceDolar;
     }
 
-    public void setPriceDolar(float priceDolar) {
+    public void setPriceDolar(String priceDolar) {
         this.priceDolar = priceDolar;
     }
 
-    public float getPriceEuro() {
+    public String getPriceEuro() {
         return priceEuro;
     }
 
-    public void setPriceEuro(float priceEuro) {
+    public void setPriceEuro(String priceEuro) {
         this.priceEuro = priceEuro;
     }
 
