@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_koc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_kocc_foreground"
+        android:foregroundGravity="left|center"
+        android:text="ARIES"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_boga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_boga_foreground"
+        android:foregroundGravity="left|center"
+        android:text="TAURUS"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_ikizler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_ikizler_foreground"
+        android:foregroundGravity="left|center"
+        android:text="GEMINI"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_yengec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_yengec_foreground"
+        android:foregroundGravity="left|center"
+        android:text="CANCER"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_aslan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_aslan_foreground"
+        android:foregroundGravity="left|center"
+        android:text="LEO"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_basak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_basakk_foreground"
+        android:foregroundGravity="left|center_vertical"
+        android:text="VIRGO"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_terazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_terazi_foreground"
+        android:foregroundGravity="left|center_vertical"
+        android:text="LIBRA"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_akrep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_akrep_foreground"
+        android:foregroundGravity="left|center"
+        android:text="SCORPİO"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_yay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_yay_foreground"
+        android:foregroundGravity="left|center"
+        android:text="SAGITTARIUS"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_oglak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_oglak_foreground"
+        android:foregroundGravity="left|center"
+        android:text="CAPRICORN"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_kova"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_kova_foreground"
+        android:foregroundGravity="left|center"
+        android:text="AQUARIUS"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_balik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@mipmap/ic_balık_foreground"
+        android:foregroundGravity="left|center_vertical"
+        android:text="PISCES"
+        android:textSize="24sp" />
+</LinearLayout>

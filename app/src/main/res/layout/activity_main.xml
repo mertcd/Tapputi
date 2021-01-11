@@ -11,19 +11,25 @@
 
         android:id="@+id/aramakutusu"
         android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="49dp"
         android:queryHint="search"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </SearchView>
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="408dp"
-        android:layout_height="49dp"
-        app:layout_constraintTop_toBottomOf="@+id/aramakutusu"
-        tools:layout_editor_absoluteX="2dp">
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aramakutusu">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,6 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#70FF2D74"
                 android:text="WOMAN" />
 
             <Button
@@ -41,6 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#7C9C27B0"
                 android:text="UNISEX" />
 
             <Button
@@ -48,35 +56,68 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#852196F3"
                 android:text="MAN" />
 
         </LinearLayout>
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/imageView13"
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:srcCompat="@mipmap/ic_launcher_perfumeseason" />
+        app:layout_constraintTop_toBottomOf="@+id/aramakutusu">
+
+        <Button
+            android:id="@+id/btn_seasonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher_foreground"
+            android:text="SEASONAL PRODUCTS"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_burc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_horscope_foreground"
+            android:text="Which Perfume According to My Horoscope?"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_shouldperfume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_kindperfume_foreground"
+            android:text="What Kind Of Perfume Should I Use?"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btn_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_about_us_foreground" />
+    </LinearLayout>
 
     <fragment
         android:id="@+id/fragment"
         android:name="mu.edu.tr.tapputi.parfumFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="1dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="1.0" />
 
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
