@@ -2,10 +2,13 @@ package mu.edu.tr.tapputi;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,7 +39,7 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
     }
 
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(mValues.get(position).getBrand());
         holder.mContentView.setText(mValues.get(position).getName());
@@ -44,18 +47,8 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         holder.priceTl.setText( mValues.get(position).getPriceTl());
         holder.priceDolar.setText( mValues.get(position).getPriceDolar());
         holder.priceEuro.setText( mValues.get(position).getPriceEuro());
-        holder.mView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (listener !=null){
-                    listener.movieSelected(holder.mItem);
-                    notifyItemChanged(selectedIndex);
-                    selectedIndex = holder.getLayoutPosition();
-                    notifyItemChanged(selectedIndex);
-                }
-            }
-        });
-        holder.itemView.setBackgroundColor(selectedIndex == position ? Color.GREEN: Color.TRANSPARENT);
+
+
     }
 
     @Override
@@ -72,6 +65,7 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         public Parfum mItem;
         public final TextView priceEuro;
         public final TextView priceDolar;
+        public final Button button;
 
 
         public ViewHolder(View view) {
@@ -83,6 +77,7 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
             priceTl =  (TextView) view.findViewById(R.id.priceTl);
             priceEuro = (TextView) view.findViewById(R.id.priceEuro);
             priceDolar = (TextView) view.findViewById(R.id.priceDolar);
+            button= (Button) view.findViewById(R.id.button);
         }
 
         @Override
