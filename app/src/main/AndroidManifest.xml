@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mu.edu.tr.tapputi">
+    package="mu.edu.tr.tapputi" >
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Account"></activity>
+        android:theme="@style/AppTheme" >
+        <activity android:name=".ShouldPerfume" >
+        </activity>
+        <activity android:name=".SeasonalProducts" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".balik" />
+        <activity android:name=".kova" />
+        <activity android:name=".oglak" />
+        <activity android:name=".yay" />
+        <activity android:name=".akrep" />
+        <activity android:name=".terazi" />
+        <activity android:name=".basak" />
+        <activity android:name=".aslan" />
+        <activity android:name=".yengec" />
+        <activity android:name=".ikizler" />
+        <activity android:name=".boga" />
+        <activity android:name=".koc" />
+        <activity android:name=".burc" />
+        <activity android:name=".Account" />
         <activity android:name=".discoverTab" />
         <activity android:name=".shoppingCartTab" />
         <activity android:name=".favoritesTab" />
         <activity android:name=".product" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
