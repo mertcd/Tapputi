@@ -6,13 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity implements parfumFragment.OnParfumSelected {
 
     Button btn_burc;
     Button btn_shouldperfume;
     Button btn_seasonal;
-    Button btn_aboutus;
+    ImageButton btn_aboutus;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements parfumFragment.On
 
 
         });
-        btn_aboutus = (Button) findViewById(R.id.btn_aboutus);
+        btn_aboutus = (ImageButton) findViewById(R.id.btn_aboutus);
         btn_aboutus.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View view){
