@@ -112,7 +112,7 @@
         android:id="@+id/btn_balik"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:foreground="@mipmap/ic_balık_foreground"
+        android:foreground="@mipmap/ic_balikk_foreground"
         android:foregroundGravity="left|center_vertical"
         android:text="PISCES"
         android:textSize="24sp" />
