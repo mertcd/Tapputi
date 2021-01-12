@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity implements parfumFragment.On
 
     @Override
     public void movieSelected(Parfum parfume) {
-        Intent intent = new Intent(this, product.class);
-        intent.putExtra("parfüm", (Parcelable) parfume);
-        startActivity(intent);
+
     }
 }
