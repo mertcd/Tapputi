@@ -2,9 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:id="@+id/favoritee"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="#DDE9EF"
     tools:context=".discoverTab">
+
     <LinearLayout
         android:id="@+id/bottomToolbar"
         android:layout_width="409dp"
@@ -48,5 +51,310 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_account_box_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/OuterLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/InnerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E91E63"
+                android:text="WOMAN" />
+
+            <Button
+                android:id="@+id/unisex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#673AB7"
+                android:text="UNISEX" />
+
+            <Button
+                android:id="@+id/man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#009688"
+                android:text="MAN" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perfume"
+                android:textAlignment="center"
+                android:textColor="#9C27B0"
+                android:textColorLink="#F44336"
+                android:textSize="30sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#FFEB3B"
+                        android:text="Essences"
+                        android:textColor="#780B0B"
+                        android:textSize="24sp" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/checkBox8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Cherry" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Lavender" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/row3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/checkBox6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Rose" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Savory" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/row2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/checkBox4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Melissa" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Rosemary" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/essencerow3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/orange"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Orange" />
+
+                                <CheckBox
+                                    android:id="@+id/chocolate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Chocolate" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <TextView
+                        android:id="@+id/Brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFEB3B"
+                        android:backgroundTint="#673AB7"
+                        android:text="Brands"
+                        android:textColor="#EFF0F4"
+                        android:textSize="24sp" />
+
+                    <ScrollView
+                        android:id="@+id/BrandScrool"
+                        android:layout_width="match_parent"
+                        android:layout_height="104dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/checkBox14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Calvin Klein" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Burberry" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bvlgari" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sebamed" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Garnier" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Versace" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nivea" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sansiro" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#E6DCDC"
+                        android:text="Size"
+                        android:textSize="24sp" />
+
+                    <ScrollView
+                        android:id="@+id/row4"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/checkBox18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50 ml"
+                                android:textSize="14sp" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="100ml" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="150ml" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edt" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
