@@ -13,15 +13,18 @@ public class Parfum {
     private short rating;
     private List<String> comments;
     private Bitmap image;
+    private Boolean isInCart;
+    private Boolean isInFavorite;
 
-    public Parfum(String brand, String name, String priceTl, String priceDolar, String priceEuro, short rating, Bitmap image) {
+    public Parfum(String brand, String name, String priceTl, String priceDolar, String priceEuro, short rating, Bitmap image,Boolean isInCart,Boolean isInFavorite) {
         this.brand = brand;
         this.name = name;
         this.priceTl = priceTl;
         this.priceDolar = priceDolar;
         this.priceEuro = priceEuro;
         this.rating = rating;
-
+        this.isInCart= isInCart;
+        this.isInFavorite=isInFavorite;
         this.image = image;
     }
 

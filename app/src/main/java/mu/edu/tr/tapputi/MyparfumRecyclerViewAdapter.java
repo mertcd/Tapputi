@@ -47,7 +47,12 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         holder.priceTl.setText( mValues.get(position).getPriceTl());
         holder.priceDolar.setText( mValues.get(position).getPriceDolar());
         holder.priceEuro.setText( mValues.get(position).getPriceEuro());
-
+        holder.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            
+            }
+        });
 
     }
 
