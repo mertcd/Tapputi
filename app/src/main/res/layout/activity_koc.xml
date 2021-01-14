@@ -5,6 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".koc">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@mipmap/ic_kocerkek_foreground" />
+
     <LinearLayout
         android:id="@+id/bottomToolbar"
         android:layout_width="409dp"
@@ -49,4 +58,58 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_account_box_24" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_kockadini_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_kockadiniiki_foreground" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="767dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="ARIES WOMAN\nThe courageous and dynamic Aries woman, whose energy is endless, attracts all eyes with her adventurous spirit. Very mild fragrances are not much for Aries, they like the claim. For this reason, woody and floral scents are ideal for Aries women.\nDolce&Gabbana The One\nYves Rocher Evidence Intense\nMarc Jacobs Daisy Dream"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="206dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@mipmap/ic_kocerkegi_foreground" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="ARIES MAN\nAries men can choose woody, floral notes of musk: musk, violet, freesia, patchouli, amber, geranium, mint, pine, rosemary and jasmine scents.\n Men by Marc Jacobs\n Egoiste Platinum for men by Chanel\nTouch for men by Burberry"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 </androidx.constraintlayout.widget.ConstraintLayout>
