@@ -22,11 +22,14 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:text="Our application has been made as a project study of the GENG3545 course. With this application how a mobile application is made has been experienced by using java language and android studio. The production team of this application; Ayça Öksüztepe ,Mertcan Denli" />
+        tools:text="                                 ABOUT US
+        \nOur application has been made as a project study of the CENG3545 course. With this application how a mobile application is made has been experienced by using java language and android studio. \nThe production team of this application: \nAyça Öksüztepe \nMertcan Denli" />
 
     <LinearLayout
         android:id="@+id/bottomToolbar"
