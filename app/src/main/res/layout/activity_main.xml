@@ -7,19 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <SearchView
 
-        android:id="@+id/aramakutusu"
-        android:layout_width="0dp"
-        android:layout_height="28dp"
-        android:layout_marginBottom="49dp"
-        android:queryHint="search"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </SearchView>
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -29,7 +17,7 @@
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aramakutusu">
+        app:layout_constraintTop_toTopOf="parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -71,7 +59,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aramakutusu">
+        app:layout_constraintTop_toBottomOf="@id/scrollView2" >
 
         <Button
             android:id="@+id/btn_seasonal"

@@ -18,12 +18,23 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import static mu.edu.tr.tapputi.MainActivity.parfums;
+
 /**
  * A fragment representing a list of Items.
  */
 public class parfumFragment extends Fragment {
     OnParfumSelected listener;
-    List<Parfum> parfums = new ArrayList<>();
+
+    List<Parfum> shoppingCart = new ArrayList<>();
+
+    public List<Parfum> getShoppingCart() {
+        return shoppingCart;
+    }
+
+    public void setShoppingCart(List<Parfum> shoppingCart) {
+        this.shoppingCart = shoppingCart;
+    }
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
@@ -56,13 +67,13 @@ public class parfumFragment extends Fragment {
         }
         Bitmap sephora = BitmapFactory.decodeResource(this.getResources(), R.drawable.sephora);
 
-        Parfum blackOpium = new Parfum("Yvis Laurent", "Black Opium", "1000₺","150$","120€", (short) 4, sephora);
+        Parfum blackOpium = new Parfum("Yvis Laurent", "Black Opium", "1000₺", "150$", "120€", (short) 4, sephora, false, false);
         parfums.add(blackOpium);
         Bitmap calvin = BitmapFactory.decodeResource(this.getResources(), R.drawable.calvin);
-        Parfum calvinKlein = new Parfum("Calvin Klein", "Intense Europhia", "1000₺","150$","120€", (short) 4, calvin);
+        Parfum calvinKlein = new Parfum("Calvin Klein", "Intense Europhia", "1000₺", "150$", "120€", (short) 4, calvin, false, false);
         parfums.add(calvinKlein);
         Bitmap armaniImage = BitmapFactory.decodeResource(this.getResources(), R.drawable.giorgio);
-        Parfum aquaDıGıo = new Parfum("Giorgio Armani", "Aqua DI Gio", "1000₺","150$","120€", (short) 4, armaniImage);
+        Parfum aquaDıGıo = new Parfum("Giorgio Armani", "Aqua DI Gio", "1000₺", "150$", "120€", (short) 4, armaniImage, false, false);
         parfums.add(blackOpium);
         parfums.add(calvinKlein);
     }
@@ -89,7 +100,7 @@ public class parfumFragment extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if (context instanceof OnParfumSelected){
+        if (context instanceof OnParfumSelected) {
             listener = (OnParfumSelected) context;
         }
     }
@@ -100,7 +111,7 @@ public class parfumFragment extends Fragment {
         listener = null;
     }
 
-    public interface OnParfumSelected{
+    public interface OnParfumSelected {
         void movieSelected(Parfum parfume);
     }
 }
