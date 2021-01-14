@@ -106,7 +106,7 @@ public class Account extends AppCompatActivity {
         btn_help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Account.this, help.class);
+                Intent intent = new Intent(Account.this, Help.class);
                 startActivity(intent);
             }
 
