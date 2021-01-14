@@ -12,7 +12,11 @@ import android.widget.ImageView;
 public class Account extends AppCompatActivity {
 
 
-
+    Button btn_order;
+    Button btn_help;
+    Button btn_evulation;
+    Button btn_info;
+    Button btn_out;
     ImageView homeButton;
     ImageView filterButton;
     ImageView favoriteButton;
@@ -68,6 +72,56 @@ public class Account extends AppCompatActivity {
 
         });
 
+        btn_order = (Button) findViewById(R.id.btn_order);
+        btn_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, order.class);
+                startActivity(intent);
+            }
 
+
+        });
+        btn_evulation = (Button) findViewById(R.id.btn_evulation);
+        btn_evulation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, evulation.class);
+                startActivity(intent);
+            }
+
+
+        });
+        btn_info = (Button) findViewById(R.id.btn_info);
+        btn_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, Info.class);
+                startActivity(intent);
+            }
+
+
+        });
+        btn_help = (Button) findViewById(R.id.btn_help);
+        btn_help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, help.class);
+                startActivity(intent);
+            }
+
+
+        });
+
+        btn_out = (Button) findViewById(R.id.btn_out);
+        btn_out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, out.class);
+                startActivity(intent);
+            }
+
+
+        });
     }
 }
