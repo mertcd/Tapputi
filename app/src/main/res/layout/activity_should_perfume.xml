@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ShouldPerfume">
@@ -51,4 +50,29 @@
         android:layout_weight="1"
         app:srcCompat="@drawable/ic_baseline_account_box_24" />
   </LinearLayout>
-  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <ImageView
+      android:id="@+id/imageView11"
+      android:layout_width="0dp"
+      android:layout_height="150dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@mipmap/ic_choose_foreground" />
+
+  <TextView
+      android:id="@+id/textView10"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:gravity="center"
+      android:text="How to Choose the Right Perfume for Your Skin?\n\n ...\n\n\nDifference Between Eau De Parfum and Eau De Toilet\n\nWhile many of you may think you know about Eau de Parfum and Eau de Toilette and are relatively similar, their formulas are quite different.
+
+Eau de Toilet, also known as EDT, has a very light and watery fragrance formula with only 5-15 percent flavored content. This is a great choice for the work environment and interviews as it has a feature that is not overwhelming and disappears within a few hours.
+
+Eau de parfum, or EDP, on the other hand, contains aroma and oils in a slightly higher concentration of about 15%, thus making the fragrance lasting even longer."
+      android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+      app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+</androidx.constraintlayout.widget.ConstraintLayout>
