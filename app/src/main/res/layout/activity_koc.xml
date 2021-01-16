@@ -10,6 +10,9 @@
         android:id="@+id/imageView9"
         android:layout_width="190dp"
         android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@mipmap/ic_kocerkek_foreground" />
@@ -69,47 +72,41 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="197dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        android:layout_width="221dp"
+        android:layout_height="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_kockadiniiki_foreground" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="767dp"
+        android:layout_width="411dp"
         android:layout_height="153dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="ARIES WOMAN\nThe courageous and dynamic Aries woman, whose energy is endless, attracts all eyes with her adventurous spirit. Very mild fragrances are not much for Aries, they like the claim. For this reason, woody and floral scents are ideal for Aries women.\nDolce&Gabbana The One\nYves Rocher Evidence Intense\nMarc Jacobs Daisy Dream"
+        android:text="@string/aries_woman_nthe_courageous_and_dynamic_aries_woman_whose_energy_is_endless_attracts_all_eyes_with_her_adventurous_spirit_very_mild_fragrances_are_not_much_for_aries_they_like_the_claim_for_this_reason_woody_and_floral_scents_are_ideal_for_aries_women_ndolce_gabbana_the_one_nyves_rocher_evidence_intense_nmarc_jacobs_daisy_dream"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="206dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="221dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
         app:srcCompat="@mipmap/ic_kocerkegi_foreground" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="413dp"
+        android:layout_height="127dp"
         android:gravity="center"
-        android:text="ARIES MAN\nAries men can choose woody, floral notes of musk: musk, violet, freesia, patchouli, amber, geranium, mint, pine, rosemary and jasmine scents.\n Men by Marc Jacobs\n Egoiste Platinum for men by Chanel\nTouch for men by Burberry"
+        android:text="@string/aries_man_naries_men_can_choose_woody_floral_notes_of_musk_musk_violet_freesia_patchouli_amber_geranium_mint_pine_rosemary_and_jasmine_scents_n_men_by_marc_jacobs_n_egoiste_platinum_for_men_by_chanel_ntouch_for_men_by_burberry"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
