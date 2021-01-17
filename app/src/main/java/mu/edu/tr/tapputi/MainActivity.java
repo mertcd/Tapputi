@@ -152,7 +152,9 @@ public class MainActivity extends AppCompatActivity implements parfumFragment.On
         return super.onCreateOptionsMenu(menu);
     }
     @Override
-    public void movieSelected(Parfum parfume) {
-
+    public void parfumSelected(Parfum parfume) {
+        Intent intent = new Intent(this, detailsActivity.class);
+        intent.putExtra("parfum", parfume);
+        startActivity(intent);
     }
 }

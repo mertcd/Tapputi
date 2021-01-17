@@ -3,6 +3,7 @@ package mu.edu.tr.tapputi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Parcelable;
 import android.view.LayoutInflater;
@@ -12,12 +13,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import mu.edu.tr.tapputi.dummy.DummyContent.DummyItem;
+
 
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem}.
+ *
  * TODO: Replace the implementation with code for your data type.
  */
 public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRecyclerViewAdapter.ViewHolder> {
@@ -43,17 +44,24 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(mValues.get(position).getBrand());
         holder.mContentView.setText(mValues.get(position).getName());
-        holder.image.setImageBitmap(mValues.get(position).getImage());
+        holder.image.setImageBitmap(BitmapFactory.decodeResource(holder.mView.getResources(),mValues.get(position).getImage()));
         holder.priceTl.setText( mValues.get(position).getPriceTl());
         holder.priceDolar.setText( mValues.get(position).getPriceDolar());
         holder.priceEuro.setText( mValues.get(position).getPriceEuro());
-        holder.button.setOnClickListener(new View.OnClickListener() {
+        holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            
+            if (  listener!= null){
+                listener.parfumSelected (holder.mItem);
+                // Redraw the old selection and the new
+                notifyItemChanged(selectedIndex);
+                selectedIndex = holder.getLayoutPosition();
+                notifyItemChanged(selectedIndex);
+            }
             }
         });
-
+        holder.itemView.setBackgroundColor(selectedIndex == position ? Color.GREEN :
+                Color.TRANSPARENT);
     }
 
     @Override

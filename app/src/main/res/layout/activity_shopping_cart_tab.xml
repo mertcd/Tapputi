@@ -6,75 +6,6 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/row"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E1B6B6"
-        app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046">
-
-        <ImageView
-            android:id="@+id/parfumImage"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_margin="5dp"
-            android:background="#FFFFFF"
-            app:srcCompat="@drawable/sephora" />
-
-        <LinearLayout
-            android:id="@+id/specsLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:background="#FBFAFA"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/brand"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:text="Yvis Laurent"
-                android:textAppearance="?attr/textAppearanceListItem"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Black Opium"
-                android:textAppearance="?attr/textAppearanceListItem" />
-
-            <TextView
-                android:id="@+id/priceTl"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="1000₺"
-                android:textAlignment="textEnd" />
-
-            <TextView
-                android:id="@+id/priceEuro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="100$"
-                android:textAlignment="textEnd" />
-
-            <TextView
-                android:id="@+id/priceDolar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="80€"
-                android:textAlignment="textEnd" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/bottomToolbar"
         android:layout_width="409dp"
         android:layout_height="48dp"
@@ -141,4 +72,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button3"
         app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
