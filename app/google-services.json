@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "431615879553",
-    "project_id": "tapputi-f9c19",
-    "storage_bucket": "tapputi-f9c19.appspot.com"
+    "project_number": "271604977033",
+    "project_id": "tapputi-parfums",
+    "storage_bucket": "tapputi-parfums.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:431615879553:android:075f1a4b5360d8d0f96080",
+        "mobilesdk_app_id": "1:271604977033:android:16c74aeb3082a96afe2558",
         "android_client_info": {
           "package_name": "mu.edu.tr.tapputi"
         }
       },
       "oauth_client": [
         {
-          "client_id": "431615879553-26pjs9h38erjjpl4motdaafu3n2jvvhj.apps.googleusercontent.com",
+          "client_id": "271604977033-3qcefd049c57rjeo2jje1f60ntkv6cqe.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB8UlmH3ZXZSxWE_AkdUijku5B29G9T5WI"
+          "current_key": "AIzaSyCkLCBkAbeowRwE72MFoGwyJVCX6zQvGaA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "431615879553-26pjs9h38erjjpl4motdaafu3n2jvvhj.apps.googleusercontent.com",
+              "client_id": "271604977033-3qcefd049c57rjeo2jje1f60ntkv6cqe.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
