@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -44,7 +45,7 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(mValues.get(position).getBrand());
         holder.mContentView.setText(mValues.get(position).getName());
-        holder.image.setImageBitmap(BitmapFactory.decodeResource(holder.mView.getResources(),mValues.get(position).getImage()));
+        Picasso.get().load(mValues.get(position).getImage()).into(holder.image);
         holder.priceTl.setText( mValues.get(position).getPriceTl());
         holder.priceDolar.setText( mValues.get(position).getPriceDolar());
         holder.priceEuro.setText( mValues.get(position).getPriceEuro());

@@ -4,9 +4,12 @@ import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.google.firebase.firestore.Exclude;
+
 import java.util.List;
 
 public class Parfum implements Parcelable {
+    @Exclude
     private String brand;
     private String name;
     private String priceTl;
@@ -14,11 +17,11 @@ public class Parfum implements Parcelable {
     private String priceEuro;
     private short rating;
     private List<String> comments;
-    private int image;
+    private String image;
     private Boolean isInCart;
     private Boolean isInFavorite;
 
-    public Parfum(String brand, String name, String priceTl, String priceDolar, String priceEuro, short rating, int image, Boolean isInCart, Boolean isInFavorite) {
+    public Parfum(String brand, String name, String priceTl, String priceDolar, String priceEuro, short rating, String image, Boolean isInCart, Boolean isInFavorite) {
         this.brand = brand;
         this.name = name;
         this.priceTl = priceTl;
@@ -30,11 +33,11 @@ public class Parfum implements Parcelable {
         this.image = image;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
@@ -100,7 +103,7 @@ public class Parfum implements Parcelable {
         dest.writeString(this.priceEuro);
         dest.writeInt(this.rating);
         dest.writeStringList(this.comments);
-        dest.writeInt(this.image);
+        dest.writeString(this.image);
         dest.writeValue(this.isInCart);
         dest.writeValue(this.isInFavorite);
     }
@@ -113,7 +116,7 @@ public class Parfum implements Parcelable {
         this.priceEuro = in.readString();
         this.rating = (short) in.readInt();
         this.comments = in.createStringArrayList();
-        this.image = in.readInt();
+        this.image = in.readString();
         this.isInCart = (Boolean) in.readValue(Boolean.class.getClassLoader());
         this.isInFavorite = (Boolean) in.readValue(Boolean.class.getClassLoader());
     }

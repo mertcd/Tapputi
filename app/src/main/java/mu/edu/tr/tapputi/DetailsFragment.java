@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link DetailsFragment#newInstance} factory method to
@@ -72,7 +74,7 @@ public class DetailsFragment extends Fragment {
         txtName.setText(parfum.getName());
 
         ImageView parfumImage = (ImageView) view.findViewById(R.id.parfumIma);
-        parfumImage.setImageBitmap(BitmapFactory.decodeResource(this.getResources(),parfum.getImage()));
+        Picasso.get().load(parfum.getImage()).into(parfumImage);;
 
         TextView priceTl = (TextView) view.findViewById(R.id.tlPriceParfume);
         priceTl.setText(parfum.getPriceTl());
