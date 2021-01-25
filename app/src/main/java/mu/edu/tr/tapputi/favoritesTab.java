@@ -14,7 +14,7 @@ import android.widget.SearchView;
 
 import static mu.edu.tr.tapputi.MainActivity.adapter;
 
-public class favoritesTab extends AppCompatActivity {
+public class favoritesTab extends AppCompatActivity implements parfumFragment.OnParfumSelected {
 
     ImageView homeButton;
     ImageView filterButton;
@@ -141,5 +141,11 @@ public class favoritesTab extends AppCompatActivity {
 
 
         });
+    }
+    @Override
+    public void parfumSelected(Parfum parfume) {
+        Intent intent = new Intent(this, detailsActivity.class);
+        intent.putExtra("parfum", parfume);
+        startActivity(intent);
     }
 }

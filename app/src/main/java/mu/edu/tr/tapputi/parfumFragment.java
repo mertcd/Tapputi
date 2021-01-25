@@ -65,17 +65,20 @@ public class parfumFragment extends Fragment {
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
-        Bitmap sephora = BitmapFactory.decodeResource(this.getResources(), R.drawable.sephora);
+        int giorgio =  R.drawable.giorgio;
+        /**
+         *
+         * .
 
-        Parfum blackOpium = new Parfum("Yvis Laurent", "Black Opium", "1000₺", "150$", "120€", (short) 4, sephora, false, false);
+        Parfum blackOpium = new Parfum("Yvis Laurent", "Black Opium", "1000₺", "150$", "120€", (short) 4, giorgio, false, false);
         parfums.add(blackOpium);
-        Bitmap calvin = BitmapFactory.decodeResource(this.getResources(), R.drawable.calvin);
-        Parfum calvinKlein = new Parfum("Calvin Klein", "Intense Europhia", "1000₺", "150$", "120€", (short) 4, calvin, false, false);
+
+        Parfum calvinKlein = new Parfum("Calvin Klein", "Intense Europhia", "1000₺", "150$", "120€", (short) 4, R.drawable.calvin, false, false);
         parfums.add(calvinKlein);
-        Bitmap armaniImage = BitmapFactory.decodeResource(this.getResources(), R.drawable.giorgio);
-        Parfum aquaDıGıo = new Parfum("Giorgio Armani", "Aqua DI Gio", "1000₺", "150$", "120€", (short) 4, armaniImage, false, false);
-        parfums.add(blackOpium);
-        parfums.add(calvinKlein);
+
+        Parfum aquaDıGıo = new Parfum("Giorgio Armani", "Aqua DI Gio", "1000₺", "150$", "120€", (short) 4,R.drawable.dior , false, false);
+        parfums.add(aquaDıGıo);
+        parfums.add(calvinKlein);*/
     }
 
     @Override
@@ -112,6 +115,6 @@ public class parfumFragment extends Fragment {
     }
 
     public interface OnParfumSelected {
-        void movieSelected(Parfum parfume);
+        void parfumSelected(Parfum parfume);
     }
 }
