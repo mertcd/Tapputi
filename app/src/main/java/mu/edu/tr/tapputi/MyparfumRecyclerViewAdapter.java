@@ -18,6 +18,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import static mu.edu.tr.tapputi.MainActivity.SHOPPING_CART;
+
 /**
  *
  * TODO: Replace the implementation with code for your data type.
@@ -49,6 +51,12 @@ public class MyparfumRecyclerViewAdapter extends RecyclerView.Adapter<MyparfumRe
         holder.priceTl.setText( mValues.get(position).getPriceTl());
         holder.priceDolar.setText( mValues.get(position).getPriceDolar());
         holder.priceEuro.setText( mValues.get(position).getPriceEuro());
+        holder.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SHOPPING_CART.add(mValues.get(position));
+            }
+        });
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
