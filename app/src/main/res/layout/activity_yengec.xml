@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".yengec">
+    tools:context=".koc">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@mipmap/ic_yayerkegi_foreground" />
 
     <LinearLayout
         android:id="@+id/bottomToolbar"
@@ -50,4 +58,61 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_account_box_24" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_yaykadini_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_yaykadin_foreground" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="SAGITTARIUS WOMAN\nSagittarius women, fond of freedom, look at life from an intellectual perspective. They love traveling, getting to know new cultures and everything different. Victor & Rolf Flowerbomb will be the most suitable fragrance for Sagittarius women due to their energies and optimistic spirits.Others:\nArmani Prive Figuier Eden\nBalenciaga Rosabotanica\nEstee Lauder Pleasures Intense"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="206dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@mipmap/ic_yayerkek_foreground" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="SAGITTARIUS MAN\nSpicy aromatic notes for Sagittarius men: We recommend scents such as tea tree, tarragon, mint, chamomile, galbanum, geranium, cypress, thyme and ginger. Here are a few suggestions:\nRefreshing Ginger by Carolina Herrera\n Givenchy Pour Homme Adventure Sensations by Givenchy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 </androidx.constraintlayout.widget.ConstraintLayout>

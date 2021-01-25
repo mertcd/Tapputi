@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ikizler">
+    tools:context=".koc">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@mipmap/ic_ikizlererkegi_foreground" />
+
     <LinearLayout
         android:id="@+id/bottomToolbar"
         android:layout_width="409dp"
@@ -49,4 +58,61 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_account_box_24" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_ikizlerkadini_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_ikizlerkadin_foreground" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="GEMINI WOMAN\nGemini women are creative, imaginative and humorous, who love to talk and have strong communication skills. They like differences and don't hesitate to try different scents. Experts recommend Carolina Herrera Good Girl suitable for Gemini women.Others:\nJo Malone Orange Blossom\nDior Homme Intense\nChloe Love Story"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="206dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@mipmap/ic_ikizlererkek_foreground" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="GEMINI MAN\nGemini men may prefer green floral notes and chypre: green notes, fresh mint, bergamot, cypress, ylang-ylang, zampac, clove, sandalwood, tonka bean, amber, patchouli, musk and cedar scents. Here are a few suggestions:\n Escape for men by Calvin Klein\n  Polo Sport for men by Ralph Lauren"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 </androidx.constraintlayout.widget.ConstraintLayout>

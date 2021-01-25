@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".balik">
+    tools:context=".koc">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@mipmap/ic_balikerkegi_foreground" />
+
     <LinearLayout
         android:id="@+id/bottomToolbar"
         android:layout_width="409dp"
@@ -49,4 +58,61 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_account_box_24" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_balikkadini_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_balikkadin_foreground" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="PISCES WOMAN\nPisces, the most timid and naive women of the Zodiac, take their life energy from water. The clarity and purity of the water is reflected in the souls of Pisces women. The most suitable perfumes for Pisces women, who show love around them with their maternal attitude, are generally fruity and floral scents. Experts recommend Burberry My Burberry Blush for Pisces woman.Others:\nCacharel Anais Anais\nAvon TTA Tomorrow\nOscar De La Renta - Bella Blanca"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="206dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@mipmap/ic_balikerkek_foreground" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="PISCES MAN\nPisces male, who enjoys dreaming and is known as the deepest personalities of the zodiacal world, stands out with his romantic side. Pisces men should turn to spices and floral scents such as jasmine, which will best suit their romantic and mysterious side when choosing perfumes. Here are a few suggestions:\n Burberry London\n   Christian Dior Fahrenheit\nDavidoff Echo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 </androidx.constraintlayout.widget.ConstraintLayout>

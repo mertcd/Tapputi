@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".basak">
+    tools:context=".koc">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@mipmap/ic_basakerkegi_foreground" />
+
     <LinearLayout
         android:id="@+id/bottomToolbar"
         android:layout_width="409dp"
@@ -49,4 +59,62 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_account_box_24" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="231dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_basakkadini_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_basakkadin_foreground" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="VIRGO WOMAN\nVirgo women who attach importance to details like to be meticulous and planned in every aspect of life. They take care to live in a planned way and are loyal to the people and habits in their lives. Experts recommend Issey Miyake L'Eau D'Issey Rose & Rose, a soothing fragrance for Virgo woman.Others:\nEstée Lauder Sensuous\nDkny Be Delicious\nChanel Coco Mademoiselle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="206dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@mipmap/ic_basakerkek_foreground" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="VIRGO MAN\nVirgo men may prefer aromatic woody notes: musk, cypress, eucalyptus, vetiver, sandalwood, bergamot and lavender scents. Here are a few suggestions:\n Vakko for men\n  Pleasures Intense for men by Estee Lauder"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 </androidx.constraintlayout.widget.ConstraintLayout>
