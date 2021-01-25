@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class burc extends AppCompatActivity {
 
@@ -21,6 +22,11 @@ public class burc extends AppCompatActivity {
     Button btn_terazi;
     Button btn_yay;
     Button btn_yengec;
+    ImageView homeButton;
+    ImageView filterButton;
+    ImageView favoriteButton;
+    ImageView cartButton;
+    ImageView accountButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
