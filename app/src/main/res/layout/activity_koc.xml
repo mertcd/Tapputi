@@ -84,7 +84,7 @@
         android:layout_height="153dp"
         android:layout_marginTop="44dp"
         android:gravity="center"
-        android:text="ARIES WOMAN\nThe courageous and dynamic Aries woman, whose energy is endless, attracts all eyes with her adventurous spirit. Very mild fragrances are not much for Aries, they like the claim. For this reason, woody and floral scents are ideal for Aries women.Others:\nDolce&amp;Gabbana The One\nYves Rocher Evidence Intense\nMarc Jacobs Daisy Dream"
+        android:text="ARIES WOMAN\nThe courageous and dynamic Aries woman, whose energy is endless, attracts all eyes with her adventurous spirit. Very mild fragrances are not much for Aries, they like the claim. For this reason, woody and floral scents are ideal for Aries women.Others:\nDolce&Gabbana The One\nYves Rocher Evidence Intense\nMarc Jacobs Daisy Dream"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
