@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".akrep">
+    tools:context=".koc">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@mipmap/ic_akreperkegi_foreground" />
+
     <LinearLayout
         android:id="@+id/bottomToolbar"
         android:layout_width="409dp"
@@ -50,13 +59,60 @@
             app:srcCompat="@drawable/ic_baseline_account_box_24" />
     </LinearLayout>
 
-    <fragment
-        android:id="@+id/fragment"
-        android:name="mu.edu.tr.tapputi.parfumFragment"
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_akrepkadin_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView18"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_akrepkadini_foreground" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="SCORPIO WOMAN\nA little mysterious and dramatic, these women stand out with their elegance. From time to time, their perspective on life is pessimistic. Scorpio women have an emotional and passionate nature. That's why experts recommend Estee Lauder Bronze Goddess for the Scorpio woman.Others:\nDior Hypnotic Poison\nVictoria’s Secret Noir Tease\nTom Ford Black Orchid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="206dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@mipmap/ic_akreperkek_foreground" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="SCORPIO MAN\nPassionate, mysterious and eye-catching scorpion zodiac scrutinize and weave the perfume selection. For Scorpio men who love to show themselves with their scents, their perfumes are almost like their weapons. According to experts, Cacharel Amor Pour Homme is the perfume that best suits Scorpio men.Others:\n Diesel Fuel For Life\n  Tom Ford Black Orchid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 </androidx.constraintlayout.widget.ConstraintLayout>
