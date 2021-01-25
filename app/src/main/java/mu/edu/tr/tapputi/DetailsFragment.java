@@ -7,13 +7,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+
+import static mu.edu.tr.tapputi.MainActivity.SHOPPING_CART;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -82,6 +87,14 @@ public class DetailsFragment extends Fragment {
         TextView priceEu = (TextView) view.findViewById(R.id.euPriceParfume);
         priceEu.setText(parfum.getPriceEuro());
 
+        Button button = (Button) view.findViewById(R.id.button7);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SHOPPING_CART.add(parfum);
+                System.out.println(parfum.getName());
+            }
+        });
 
 
     }

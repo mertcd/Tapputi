@@ -32,6 +32,8 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity implements parfumFragment.OnParfumSelected {
     public static List<Parfum> parfums = new ArrayList<>();
     public static ArrayAdapter<String> adapter;
+    public static List<Parfum> SHOPPING_CART = new ArrayList<>();
+
     Button btn_burc;
     Button btn_shouldperfume;
     Button btn_seasonal;
