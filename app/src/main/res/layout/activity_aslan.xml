@@ -84,7 +84,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="44dp"
         android:gravity="center"
-        android:text="SCORPIO WOMAN\nArtistic Leo women value talent. They have clear lines in their lives and attach great importance to loyalty in their relationships. Experts who think that pungent fragrances will suit the Lion woman recommend Estee Lauder Beautiful Belle.Others:\nPaco Rabanne Lady Million\nGivenchy Absolutely Irresistible\nTom Ford Black Orchid"
+        android:text="LEO WOMAN\nArtistic Leo women value talent. They have clear lines in their lives and attach great importance to loyalty in their relationships. Experts who think that pungent fragrances will suit the Lion woman recommend Estee Lauder Beautiful Belle.Others:\nPaco Rabanne Lady Million\nGivenchy Absolutely Irresistible\nTom Ford Black Orchid"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView20"

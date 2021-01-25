@@ -12,7 +12,7 @@
         android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@mipmap/ic_yayerkegi_foreground" />
+        app:srcCompat="@mipmap/ic_yengecerkegi_foreground" />
 
     <LinearLayout
         android:id="@+id/bottomToolbar"
@@ -65,7 +65,7 @@
         android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_yaykadini_foreground" />
+        app:srcCompat="@mipmap/ic_yengeckadini_foreground" />
 
     <ImageView
         android:id="@+id/imageView18"
@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView17"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_yaykadin_foreground" />
+        app:srcCompat="@mipmap/ic_yengeckadin_foreground" />
 
     <TextView
         android:id="@+id/textView7"
@@ -84,7 +84,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="44dp"
         android:gravity="center"
-        android:text="SAGITTARIUS WOMAN\nSagittarius women, fond of freedom, look at life from an intellectual perspective. They love traveling, getting to know new cultures and everything different. Victor & Rolf Flowerbomb will be the most suitable fragrance for Sagittarius women due to their energies and optimistic spirits.Others:\nArmani Prive Figuier Eden\nBalenciaga Rosabotanica\nEstee Lauder Pleasures Intense"
+        android:text="CANCER WOMAN\nSensitive and emotional, Cancer women stand out for their domestic nature and docility. Because they care about home life, they want to feel comfortable everywhere. Experts recommend Marc Jacobs Daisy Love, an uncomplicated, harmonious fragrance for the Cancer woman.Others:\nChanel No 5\nMaison Margiela Replica Beach Walk\nBobbi Brown Almost Bare"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView20"
@@ -102,14 +102,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView19"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
-        app:srcCompat="@mipmap/ic_yayerkek_foreground" />
+        app:srcCompat="@mipmap/ic_yengecerkek_foreground" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="SAGITTARIUS MAN\nSpicy aromatic notes for Sagittarius men: We recommend scents such as tea tree, tarragon, mint, chamomile, galbanum, geranium, cypress, thyme and ginger. Here are a few suggestions:\nRefreshing Ginger by Carolina Herrera\n Givenchy Pour Homme Adventure Sensations by Givenchy"
+        android:text="CANCER MAN\nCancer men can choose from aquatic aromatic notes: orange blossom, grapefruit, rosemary, ylang-ylang, rose, seaweed, white cedar and sandalwood scents. Here are a few suggestions:\nAqua Pour Homme Marine Toniq by Bvlgari\n  Burberry Sport Ice for men by Burrberry"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
         app:layout_constraintEnd_toEndOf="parent"

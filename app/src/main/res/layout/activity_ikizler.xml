@@ -63,6 +63,7 @@
         android:id="@+id/imageView17"
         android:layout_width="190dp"
         android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_ikizlerkadini_foreground" />
